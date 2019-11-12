@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         TextView tvTemp = findViewById(R.id.tvTemp);
         TextView tvCity =findViewById(R.id.tvCity);
         tvCity.setText(strCity);
-        tvTemp.setText(strTemp+"° ");
+        tvTemp.setText(strTemp.substring(0,4)+"° ");
 
     }
 
