@@ -2,6 +2,7 @@ package com.example.anshulsingh.clima;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -36,6 +37,7 @@ import java.util.Scanner;
 public class MainActivity extends AppCompatActivity {
    public double currentLongitude;
    public double currentLatitude;
+   Button btnChangeScreen;
    ImageView layout1;
 
     @Override
@@ -43,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnChangeScreen = findViewById(R.id.btnChangeScreen);
+
+        btnChangeScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                Intent i = new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(i);
+            }
+        });
         layout1=findViewById(R.id.layout1);
 //        Picasso.get().load("https://i.redd.it/ihfnlpbze7o01.jpg").into(layout1);
 

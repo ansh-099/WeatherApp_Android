@@ -21,6 +21,13 @@
         android:text="21° "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="bottom|center"
+        android:text="Get Weather for some state"
+        android:id="@+id/btnChangeScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     <TextView
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
